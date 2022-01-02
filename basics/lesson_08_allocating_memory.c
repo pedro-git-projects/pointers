@@ -31,3 +31,11 @@ int main(int argc, char **argv) {
 
 	return EXIT_SUCCESS;
 }
+
+/* It is important to note that the malloc function
+ * allocates memory in the heap(monte).
+ * Local variables, inside function scopes are allocated inside 
+ * the stack(pilha). 
+ * When a variable goes out of scope, it is cleared from the stack.
+ * The heap is where the global data is stored.
+ * */
