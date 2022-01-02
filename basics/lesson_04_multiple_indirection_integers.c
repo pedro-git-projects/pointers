@@ -12,15 +12,15 @@ int main(void) {
 
 	printf("multiple indirection example:\n\n");
 
-	// Initialize our integer array
+	// Initialize the integer array
 	for (int i = 0; i < LENGHT; i++) {
 		data[i] = i;
 	}
+
+	// print the number stored in each position
 	for (int i = 0; i < LENGHT; i++) {
 		printf("%d\n", data[i]);
 	}
-
-	// pointer to integer
 	
 	pi = data;    // set the pointer to an integer to the start of the data array
 	ppi = &pi;    // set the pointer to a pointer to pi itself
